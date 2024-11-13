@@ -11,5 +11,9 @@ RSpec.describe Calculator do
 		it 'returns the provided number itself while its single digit' do
 			expect(Calculator.add("5")).to eq(5)
 		end
+
+		it 'returns the sum of two numbers which is separated by comma' do
+			expect(Calculator.add("5,10")).to eq(15)
+		end
 	end
 end
