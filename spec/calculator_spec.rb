@@ -23,5 +23,9 @@ RSpec.describe Calculator do
     it 'handles newlines as delimiters' do
       expect(Calculator.add("5\n10,15")).to eq(30)
     end
+
+		it 'supports different delimiters' do
+      expect(Calculator.add("//;\n5;5")).to eq(10)
+    end
 	end
 end
