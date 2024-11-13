@@ -26,4 +26,4 @@ This is the test task which is verify the specs or testing of the `add` method o
 
 ## Testing
    ```bash
-   rspec ./spec/calculator_spec.rb
+   rspec ./spec # From the root directory of project
